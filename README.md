@@ -8,5 +8,5 @@ Jogo da forca utilizando Javascript, HTML and CSS.
 
 ## Live preview
 
-You can see live preview here [https://ligiamoreno91.github.io/Challenge-Oracle-One/](https://ligiamoreno91.github.io/Challenge-Oracle-One/)
+You can see live preview here [https://ligiamoreno91.github.io/Challenge-Oracle-One/]( https://ligiamoreno91.github.io/Challenge-Oracle-One-//)
 
