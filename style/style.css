@@ -1,0 +1,249 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2.5rem 5.25rem;
+  display: flex;
+  flex-flow: column;
+}
+.header {
+  flex: 1;
+  width: 100%;
+  max-height: 80px;
+}
+.home__start {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.813rem;
+}
+.home__start button {
+  width: 19.813rem;
+  height: 6.563rem;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+.home__start button p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+.home__start button:first-child {
+  background: #0A3871;
+}
+.home__start button:first-child p {
+  color: #FFFFFF;
+}
+.home__start button:last-child {
+  color: #FFFFFF;
+  border: 1px solid #0A3871;
+}
+.home__start button:last-child p {
+  color: #0A3871;
+}
+.start__area {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1.813rem;
+  font-family: 'Inter', sans-serif;
+}
+.start__area .input__area {
+  flex: 1;
+  width: 43rem;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.start__area .input__area input {
+  width: 100%;
+  max-width: 25.813rem;
+  max-height: 2.688rem;
+  border: none;
+  
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  color: #0A3871;
+}
+.start__area .input__area input:focus {
+  outline: none;
+}
+.start__area .input__area input::placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  color: #0A3871;
+}
+.start__area .action__area {
+  width: 43rem;
+  max-height: 6.313rem;
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+.start__area .action__area .alert  {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.start__area .action__area .alert i {
+  color: #495057;
+  font-size: 1.5rem;
+}
+.start__area .action__area .alert span {
+  font-weight: 400;
+  font-size: .75rem;
+  line-height: 150%;
+  color: #495057;
+  opacity: 0.8;
+}
+.start__area .action__area button {
+  width: 20.75rem;
+  height: 4.188rem;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+.start__area .action__area button:nth-child(2) {
+  background: #0A3871;
+}
+.start__area .action__area button:nth-child(3) {
+  background: #0A3871;
+}
+.start__area .action__area button:nth-child(4) {
+  border: 1px solid #0A3871;
+}
+.start__area .action__area button p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  text-align: center;
+}
+.start__area .action__area button:nth-child(2) p {
+  color: #FFFFFF;
+}
+.start__area .action__area button:nth-child(3)  p {
+  color: #FFFFFF;
+}
+.start__area .action__area button:nth-child(4)  p {
+  color: #0A3871;
+}
+.start__area .game__area {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1.813rem;
+}
+.start__area .game__area .draw__area{
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+.start__area .game__area .draw__area .contest_win {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  font-size: 3rem;
+  color: green
+}
+.start__area .game__area .draw__area .contest_lose {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  font-size: 3rem;
+  color: red
+}
+.start__area .game__area .game__words {
+  min-width: 464px;
+  height: 152px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.start__area 
+.game__area 
+.game__words 
+.game_correct__words {
+  height: 92px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+.start__area 
+.game__area 
+.game__words 
+.game_correct__word {
+  position: relative;
+  width: 80px;
+}
+.start__area 
+.game__area 
+.game__words 
+.game_correct__word p {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 150%;
+  text-align: center;
+  color: #0A3871;
+}
+.start__area 
+.game__area 
+.game__words 
+.game_correct__word 
+.word__underline
+{
+  width: 80px;
+  height: 4px;
+  background: #0A3871;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0px;
+}
+.start__area 
+.game__area 
+.game__words 
+.game__wrong__words{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.start__area 
+.game__area 
+.game__words 
+.game__wrong__words p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+  cursor: default;
+}
+.container footer {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1.2rem;
+}
+.container footer a {
+  text-decoration: none;
+  color: #0A3871;
+  text-align: center;
+  vertical-align: middle;
+ }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/global.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Descubra a Palavra</title>
+</head>
+<body onload="newGame(); drawHangman()">
+  <section class="container">
+    <header class="header">
+      <a href="index.html">
+        <img src="./assets/logo.svg" alt="logo">
+      </a>      
+    </header>
+    <div class="start__area">
+      <div class="game__area">
+        <div class="draw__area">
+          <canvas id="hangman" width="294" height="360">
+          </canvas>
+        </div>
+        <div class="game__words">
+          <div class="game_correct__words">
+          </div>
+          <div class="game__wrong__words">
+          </div>
+        </div>
+      </div>
+      <div class="action__area">
+        <div class="alert">
+        </div>
+        <button onclick="restartGame()"><p>Novo jogo</p></button>
+        <button onclick="giveUp()"><p>Desistir</p></button>
+      </div>
+    <footer>
+      Developed by 
+      <a href="https://github.com" target="_blank">
+        @ligiamoreno91</a>
+    </footer>
+    </section>
+    <script src="./js/hangman.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/bundle.js"></script>
+    <script>
+      hasWords()
+    </script>
+</body>
+</html>

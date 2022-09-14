@@ -1,0 +1,17 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 82.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #F3F5FC;
+}
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}

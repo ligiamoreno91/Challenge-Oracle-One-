@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/global.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Criar palavras</title>
+</head>
+<body>
+  <section class="container">
+    <header class="header">
+      <a href="index.html">
+        <img src="./assets/logo.svg" alt="logo">
+      </a>
+    </header>
+    <div class="start__area">
+      <div class="input__area">
+        <input 
+        id="newWordInput" 
+        type="text" 
+        placeholder="Digite uma palavra ou frase"
+        maxlength="8" />
+      </div>
+      <div class="action__area">
+        <div class="alert">
+          <i class='bx bxs-alarm-exclamation'></i>
+          <span>Máx. de 8 letras</span>
+        </div>
+        <button onclick="createWord()"><p>Salvar e começar</p></button>
+        <button onclick="addNewWord()"><p>Adicionar nova palavra</p></button>
+        <button onclick="cancelWordCreation()"><p>Cancelar</p></button>
+      </div>
+    </div>
+    <footer>
+      Developed by 
+      <a href="https://github.com" target="_blank">
+        @ligiamoreno91</a>
+    </footer>
+  </section>
+  <script src="./js/bundle.js"></script>
+</body>
+</html>
